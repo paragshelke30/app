@@ -1,0 +1,84 @@
+.bg-round-image {
+  width: 100vw;
+  height: 100vh;
+  background: $back1;
+  background: -moz-linear-gradient(top, $back1 35%, $back2 100%);
+  background: -webkit-linear-gradient(top, $back1 35%, $back2 100%);
+  background: linear-gradient(to bottom, $back1 35%, $back2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$back1, endColorstr=$back2, GradientType=0);
+}
+
+#login {
+  width: 100vw;
+  height: 100vh;
+  /*background-color: var(--back-one);*/
+  background: var(--back-one);
+  background: -moz-linear-gradient(top, var(--back-one) 35%, var(--back-two) 100%);
+  background: -webkit-linear-gradient(top, var(--back-one) 35%, var(--back-two) 100%);
+  background: linear-gradient(to bottom, var(--back-one) 35%, var(--back-two) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--back-one), endColorstr=var(--back-two), GradientType=0);
+  form {
+    display: table-cell;
+    vertical-align: middle;
+    .header {
+      padding-bottom: 20px;
+      img {
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+        border-radius: 100%;
+      }
+    }
+    .button.button-light.active,
+    .button.button-light.activated {
+      color: #fff;
+      opacity: inherit;
+    }
+    .item-input-login {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--front-color);
+    }
+    .item-input-edit {
+      background: rgba(255, 255, 255, 0.7);
+      border: none;
+      border-bottom: 1px solid $light;
+    }
+    .labelColor {
+      color: #000000;
+    }
+    .icon-margin {
+      margin-right: 16px;
+    }
+    .icon-fill {
+      fill: var(--front-color);
+    }
+    .tagColor {
+      color: var(--front-color);
+    }
+  }
+  .scroll-content {
+    display: table !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+   ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: var(--front-color);
+  }
+   ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: var(--front-color);
+  }
+   :-ms-input-placeholder {
+    /* IE 10+ */
+    color: var(--front-color);
+  }
+   :-moz-placeholder {
+    /* Firefox 18- */
+    color: var(--front-color);
+  }
+  input {
+    color: var(--front-color);
+  }
+}

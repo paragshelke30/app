@@ -1,0 +1,68 @@
+<ion-view id="login" hide-nav-bar="true">
+  <ion-content padding="true" scroll="false">
+    <form>
+      <div class="row">
+        <div class="col text-right tagColor" ng-click="vm.editToggle = !vm.editToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24" class="icon-margin icon-fill"><path d="M19,11.5C19,11.5 17,13.67 17,15A2,2 0 0,0 19,17A2,2 0 0,0 21,15C21,13.67 19,11.5 19,11.5M5.21,10L10,5.21L14.79,10M16.56,8.94L7.62,0L6.21,1.41L8.59,3.79L3.44,8.94C2.85,9.5 2.85,10.47 3.44,11.06L8.94,16.56C9.23,16.85 9.62,17 10,17C10.38,17 10.77,16.85 11.06,16.56L16.56,11.06C17.15,10.47 17.15,9.5 16.56,8.94Z" /></svg>
+        </div>
+      </div>
+      <div class="row" ng-if="vm.editToggle">
+        <div class="col">
+          <label class="item item-input item-input-edit">
+            <!--<span class="labelColor">Top</span>-->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24" fill="#000000" class="icon-margin"><path d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" /></svg>
+
+            <input type="color" ng-model="vm.color.back1"
+              ng-change="vm.change('--back-one',vm.color.back1);" id="ng-change-example1" />
+          </label>
+        </div>
+        <div class="col">
+          <label class="item item-input item-input-edit">
+            <!--<span class="labelColor">Bottom</span>-->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24" fill="#000000" class="icon-margin"><path d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" /></svg>
+            <input type="color" ng-model="vm.color.back2"
+              ng-change="vm.change('--back-two',vm.color.back2)" id="ng-change-example2" />
+          </label>
+        </div>
+        <div class="col">
+          <label class="item item-input item-input-edit">
+            <!--<span class="labelColor">Fornt</span>-->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24" fill="#000000" class="icon-margin"><path d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" /></svg>
+
+            <input type="color" ng-model="vm.color.front"
+              ng-change="vm.change('--front-color',vm.color.front)" id="ng-change-example3" />
+          </label>
+        </div>
+      </div>
+
+      <div class="row responsive-md" layout-align="center center">
+        <div class="col col-50 col-offset-25">
+          <div class="header padding text-center">
+            <img src="images/logo.png" alt="Your logo here" />
+          </div>
+          <div class="list">
+            <label class="item item-input item-input-login">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24" class="icon-margin icon-fill"><path d="M12,13C9.33,13 4,14.33 4,17V20H20V17C20,14.33 14.67,13 12,13M12,4A4,4 0 0,0 8,8A4,4 0 0,0 12,12A4,4 0 0,0 16,8A4,4 0 0,0 12,4M12,14.9C14.97,14.9 18.1,16.36 18.1,17V18.1H5.9V17C5.9,16.36 9,14.9 12,14.9M12,5.9A2.1,2.1 0 0,1 14.1,8A2.1,2.1 0 0,1 12,10.1A2.1,2.1 0 0,1 9.9,8A2.1,2.1 0 0,1 12,5.9Z" /></svg>
+              <input type="email" placeholder="Email">
+            </label>
+            <label class="item item-input item-input-login">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24" class="icon-margin icon-fill"><path d="M12,17C10.89,17 10,16.1 10,15C10,13.89 10.89,13 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17M18,20V10H6V20H18M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V10C4,8.89 4.89,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z" /></svg>
+              <input type="password" placeholder="Password">
+            </label>
+          </div>
+          <button class="button button-block button-calm">
+            Log In
+          </button>
+          <div class="row row-no-padding">
+            <div class="col tagColor">
+              Forgot password?
+            </div>
+            <div class="col text-right tagColor">
+              Sign up
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
