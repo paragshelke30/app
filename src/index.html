@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="bower_components/ionic/release/css/ionic.css" />
     <link rel="stylesheet" href="bower_components/roboto-fontface/css/roboto/roboto-fontface.css" />
     <link rel="stylesheet" href="bower_components/roboto-fontface/css/roboto-condensed/roboto-condensed-fontface.css" />
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -34,7 +35,7 @@
     Templates are in the /templates folder (but you could also
     have templates inline in this html file if you'd like).
   --> <!-- The nav bar that will be updated as we navigate -->
- 
+
     <ion-nav-view></ion-nav-view>
     <!-- <div ui-view autoscroll="true" class="div-view"></div> -->
 
@@ -58,6 +59,9 @@
     <script src="bower_components/angular-elastic/elastic.js"></script>
     <script src="bower_components/moment/moment.js"></script>
     <script src="bower_components/angular-filter/dist/angular-filter.js"></script>
+    <script src="bower_components/ionic-modal-select/dist/ionic-modal-select.js"></script>
+    <script src="bower_components/nf-localization/dist/localizationService.js"></script>
+    <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <script src="bower_components/moment/min/locales.js"></script>
@@ -80,7 +84,7 @@
     <script src="app/core/app.core.module.js"></script>
     <script src="app/directives/app.directives.module.js"></script>
     <script src="app/home/app.home.module.js"></script>
-    <script src="app/init/app.init.module.js"></script>
+    <script src="app/login/app.login.module.js"></script>
     <script src="app/menu/app.menu.module.js"></script>
     <script src="app/services/app.services.module.js"></script>
     <script src="app/app.config.js"></script>
@@ -88,11 +92,12 @@
     <script src="app/app.run.js"></script>
     <script src="app/home/app.home.controller.js"></script>
     <script src="app/home/app.home.routes.js"></script>
-    <script src="app/init/app.init.controller.js"></script>
-    <script src="app/init/app.init.routes.js"></script>
+    <script src="app/login/app.login.controller.js"></script>
+    <script src="app/login/app.login.routes.js"></script>
     <script src="app/menu/app.menu.controller.js"></script>
     <script src="app/menu/app.menu.directive.js"></script>
     <script src="app/menu/app.menu.routes.js"></script>
+    <script src="app/services/app.common.service.js"></script>
     <script src="app/services/app.template.service.js"></script>
     <!-- endinject -->
 

@@ -35,7 +35,7 @@
       opacity: inherit;
     }
     .item-input-login {
-      background: transparent;
+      background: transparent !important;
       border: none;
       border-bottom: 1px solid var(--front-color);
     }
@@ -80,5 +80,6 @@
   }
   input {
     color: var(--front-color);
+    background: transparent !important;
   }
 }

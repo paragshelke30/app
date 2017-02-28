@@ -2,16 +2,16 @@
   'use strict';
 
   angular
-    .module('app.init')
+    .module('app.login')
     .config(routes);
 
   routes.$inject = ['$stateProvider'];
 
   function routes($stateProvider) {
-    $stateProvider.state('init', {
-      url: '/init',
-      templateUrl: 'app/init/init.html',
-      controller: 'InitController as vm',
+    $stateProvider.state('login', {
+      url: '/login',
+      templateUrl: 'app/login/login.html',
+      controller: 'loginController as vm',
       bindToController: true,
     });
   }

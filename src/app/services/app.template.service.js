@@ -24,7 +24,7 @@
   function appTemplate($q, $window, $http, $log) {
     var service = {
       getTemplate: getTemplate,
-      getCss : getCss
+      getCss: getCss
     };
 
     return service;

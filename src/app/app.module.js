@@ -6,10 +6,15 @@
       /* Shared modules */
       'ionic',
       'app.core',
-      'app.home',
 
       /* Feature areas */
-      'app.init',
-      'app.services'
+      'app.login',
+      'app.home',
+      'app.services',
+      'nf.localization',
+      'ionic-modal-select',
+
+      /*3rd party*/
+      'toastr'
   ]);
 })();

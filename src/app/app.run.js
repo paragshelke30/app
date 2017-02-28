@@ -6,29 +6,30 @@
     .run(runBlock);
 
   runBlock.$inject = ['$ionicPlatform',
-                      '$ionicHistory',
-                      '$templateCache',
-                      '$rootScope',
-                      '$log',
-                      'appTemplate'
-                     ];
+    '$ionicHistory',
+    '$templateCache',
+    '$rootScope',
+    '$log',
+    'appTemplate',
+    'nfLocalization'
+  ];
 
   function runBlock($ionicPlatform,
-                    $ionicHistory,
-                    $templateCache,
-                    $rootScope,
-                    $log,
-                    appTemplate) {
+    $ionicHistory,
+    $templateCache,
+    $rootScope,
+    $log,
+    appTemplate,
+    nfLocalization) {
+    var localizationConfig = {
+      locale: navigator.language || '',
+      path: 'locales/'
+    };
 
-    //$templateCache.put('app/init/init.html', '<div><h1>Parag</h1></div>');
-    /*appTemplate.getTemplate('init.html')
-      .then(function (data) {
-        $templateCache.put('app/init/init.html', '<div><h1>Parag</h1></div>');
-				}, function (error) {
-					$log.error(error);
-				});*/
-
-    //$templateCache.put('app/init/init.html', '<div><h1>Parag</h1></div>');
+    nfLocalization.init(localizationConfig)
+      .then(function () {
+        $rootScope.translations = nfLocalization.getTexts();
+      });
 
     $ionicPlatform.ready(defaultSettings);
 

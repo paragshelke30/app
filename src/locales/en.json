@@ -1,3 +1,24 @@
 {
-  "init.organization.placeholder": "Placeholder"
+  "login": {
+    "title": "Apps En",
+    "placeholder": {
+      "name": "NameEn",
+      "password": "PasswordEn",
+      "forgotPassword": "Forgot password ?En",
+      "signUp": "Sign upEn"
+    },
+    "button": {
+      "login": "Log inEn"
+    },
+    "organizations": {
+      "label": "Select OrgnizationEn",
+      "description": "Please select the organization !",
+      "message": "Invalid organization"
+    },
+    "description": "Something went wrong !",
+    "message": "Invalid Login"
+  },
+  "home": {
+    "welcomeNote": "Welcome "
+  }
 }
